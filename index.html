@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        
+    <div class="box">
+        <button class="openModal">+</button>
+        <div class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <form class="form">
+                   <b> Correspondent</b> <input type="text" name="name1">
+                   <b>Type Document </b><input type="text" name="name2">
+                   <b>Description </b><input type="text" name="name3">
+                   <b>Status </b><input type="text" name="name4">
+                    <button type="submit">ADD</button>
+                </form>
+            </div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Correspondent</th>
+                    <th>Type Document</th>
+                    <th>Description</th>
+                    <th>Status</th>
+                    <th colspan="2">Action</th>
+                </tr>
+            </thead>
+            <tbody class="tbody"></tbody>
+        </table>
+    </div>
+    <div class="modal2">
+        <div class="modal2-content">
+            <span class="close2">&times;</span>
+            <form class="form2">
+                <b>Correspondent </b><input type="text" name="name1">
+                <b>Type Document </b><input type="text" name="name2">
+                <b>Description </b><input type="text" name="name3">
+               <b> Status </b><input type="text" name="name4">
+                <button type="submit">EDIT</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
